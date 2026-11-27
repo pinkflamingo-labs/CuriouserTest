@@ -34,7 +34,7 @@ html.ccdark #ccl{background:radial-gradient(circle at 50% 42%,#29225c 0%,#15123c
 
 
 
-</style><link rel="stylesheet" href="assets/rd.dc36db35ae.css">
+</style><link rel="stylesheet" href="assets/rd.af6f7a372f.css">
 <link rel="manifest" href="assets/ccapp.6614417b3a.webmanifest"><meta name="apple-mobile-web-app-title" content="Curiouser">
 </head>
 <body>
@@ -223,7 +223,7 @@ window.CC_SEASON_P=window.ccSeasonPart('a')})();</script>
  <p class="ccfoot"><button type="button" class="replay" data-act="tour">Take the tour</button><button type="button" class="replay" data-act="behind">Behind the Looking Glass</button><button type="button" class="replay" data-act="past">Past issues</button><button type="button" class="replay" data-act="dict">The Dodo's dictionary</button><button type="button" class="replay" data-act="brief">One-page briefing</button><button type="button" class="replay" data-act="calall">Key dates to my calendar</button><button type="button" class="replay" data-act="book">Book 30 minutes with Charlie</button></p>
  <p class="ccsrc"><b>How it works</b> is based on Microsoft's 25 September 2026 announcement, <a href="https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/" target="_blank" rel="noopener">Introducing the new Copilot with Home, Code and Autopilot</a>: everyday work on a fixed-cost user licence with Auto choosing the model; Cowork, Code, Autopilot and frontier models on usage-based credits; Agent 365 spend policies, credit approvals and model controls; and credit balances for users plus value insights for leaders. Some of these controls are still rolling out. No prices are shown; see Microsoft for current licensing.</p><p class="ccpriv"><span class="cpi2" data-ico="lock"></span><span>This page sets no cookies and uses no tracking or analytics. It only remembers your display choices, and that you have seen the welcome and the tour, on your own device.</span></p>
  <div class="ccdisc" role="note" aria-label="Disclaimer"><span class="ccdi" data-ico="scroll"></span><div><b>Independent and unofficial</b><p>Curiouser and Curiouser is an independent site created by Charlie Marie Shanks and Bill Lockett. Although we both work at Microsoft, this site is not affiliated with, endorsed by or published on behalf of Microsoft Corporation or any of its subsidiaries, and it does not represent Microsoft&rsquo;s views. It reflects our own opinions, research and work, drawn from publicly available sources. Use it as a guide only: it may contain errors or go out of date, it is not legal, licensing, security, privacy or procurement advice, and it does not change or add to any agreement, terms or commitments between your organisation and Microsoft. Always check the official documentation, do your own research and due diligence, and get the right advice before making decisions. To the extent permitted by law, Microsoft has no responsibility or liability for this site or its content, and we accept no liability for any loss arising from reliance on it. Microsoft, Microsoft 365, Copilot and related names are trademarks of the Microsoft group of companies.</p></div></div>
- <p class="ccver">Version: Issue 05, updated 25 November 2026 &middot; build b490b4e</p>
+ <p class="ccver">Version: Issue 05, updated 25 November 2026 &middot; build 1dc46cb</p>
 </footer>
 <button class="fab" id="fab" aria-label="Back to top"><span data-ico="up"></span></button>
 <div class="tip" id="tip"></div>
@@ -239,7 +239,7 @@ window.CC_SEASON_P=window.ccSeasonPart('a')})();</script>
 window.CC_WEB=true;
 window.CC_DARK_CSS="assets/dark.4615c30575.css";
 window.CC_DECIDE_JS="assets/decide.da871ed2a2.js";
-window.CC_GARDEN_JS="assets/garden.d642b92b1f.js";
+window.CC_GARDEN_JS="assets/garden.7f04cc0157.js";
 window.CC_TOUCH_JS="assets/glass.a784a8aac0.js";
 window.CC_GLASS_JS="assets/glass.a784a8aac0.js";
 window.SCENES_S={"clockmaker": "assets/pano-clockmaker-s.ac59a39616.webp", "hole": "assets/pano-hole-s.eba3cbc864.webp", "moreton": "assets/pano-moreton-s.4f4a682c5e.webp", "whitsundays": "assets/pano-whitsundays-s.97b45ed09c.webp", "daintree": "assets/pano-daintree-s.96d73d8270.webp", "jacaranda": "assets/pano-jacaranda-s.c51888ad4d.webp", "outback": "assets/pano-outback-s.ea5662686c.webp", "hall": "assets/pano-hall-s.b16a9c2ae6.webp", "race": "assets/pano-race-s.719c59bcf6.webp", "alice": "assets/pano-alice-s.ff95b9fd95.webp", "court2": "assets/pano-court2-s.08da3e9553.webp", "school": "assets/pano-school-s.61c6e3c55c.webp"};
@@ -1342,7 +1342,7 @@ function setStage(id,focus){const s=S.stages.find(x=>x.id===id)||S.stages[0];sto
  $('#mtsstgd').innerHTML=`<div class="mts-stgh"><span class="mts-stgi" aria-hidden="true">${ic(s.ic)}</span><div><div class="k">${esc(s.tag)}</div><h4>${esc(s.name)}</h4><p>${esc(s.who)}</p></div><span class="mts-stgbs"><button type="button" class="mts-planbtn pl-buildb" data-plbuild="${s.id}" title="Choose who it is for, check the lessons, then email the plan with its own link"><span class="mts-planbi" aria-hidden="true">${ic('scroll')}</span><span>Build a learning plan for this stage</span></button><button type="button" class="mts-lnk sm" data-plan="1" title="One page with this stage, its next five, the First Term and classes to join. Print it, or choose Save as PDF."><span class="mts-planbi" aria-hidden="true">${ic('brief')}</span>Print this stage</button></span></div>
  <div class="pl-inc" data-plinc="${s.id}"></div>
  <div class="mts-stgc"><div class="mts-next"><div class="dlabel">Your next five <span class="mts-tcount">${done.length} of ${s.next.length} done</span></div><ol>${s.next.map((n,i)=>`<li><button type="button" class="mts-tick${done.includes(i)?' done':''}" data-i="${i}" aria-pressed="${done.includes(i)?'true':'false'}"><span class="mts-tbox" aria-hidden="true"></span><span>${esc(n)}</span></button></li>`).join('')}</ol>${scene(s)}</div>
- <div class="mts-stgr">${s.first?`<button type="button" class="mts-first" data-mts="mts-term"><span class="mts-firsti" aria-hidden="true">${ic('crownq')}</span><span class="mts-firstt"><b>${esc(s.first.t)}</b><span>${esc(s.first.p)}</span></span><span class="mts-firstgo">Open the First Term <span aria-hidden="true">&rarr;</span></span></button>`:''}<div class="mts-xf mts-x-${s.extra.rung}"><span class="mts-xfi" aria-hidden="true">${ic(R.ic||'shell')}</span><div><div class="dlabel">The extras to focus on</div><b>${esc(RUNG[s.extra.rung])}</b><p>${esc(s.extra.p)}</p><button type="button" class="mts-lnk sm" data-mts="mts-extras">See the extras <span aria-hidden="true">&rarr;</span></button></div></div>
+ <div class="mts-stgr">${s.first?`<button type="button" class="mts-first" data-ttterm="first"><span class="mts-firsti" aria-hidden="true">${ic('crownq')}</span><span class="mts-firstt"><b>${esc(s.first.t)}</b><span>${esc(s.first.p)}</span></span><span class="mts-firstgo">Open the First Term <span aria-hidden="true">&rarr;</span></span></button>`:''}<div class="mts-xf mts-x-${s.extra.rung}"><span class="mts-xfi" aria-hidden="true">${ic(R.ic||'shell')}</span><div><div class="dlabel">The extras to focus on</div><b>${esc(RUNG[s.extra.rung])}</b><p>${esc(s.extra.p)}</p><button type="button" class="mts-lnk sm" data-mts="mts-extras">See the extras <span aria-hidden="true">&rarr;</span></button></div></div>
  <div class="mts-learn"><div class="dlabel">Best learning for this stage</div><ul>${s.learn.map(l=>`<li>${link(l.k,l.n)}<span>${esc(l.d)}</span></li>`).join('')}</ul></div>
  <div class="mts-safe"><span class="mts-safei" aria-hidden="true">${ic('shield')}</span><div><b>${esc(s.safe.t)}</b><p>${esc(s.safe.p)} ${chip(s.safe.src)}</p></div></div></div></div>`;
  /* v90: what this stage includes for staff, from the Gryphon's lesson plans (garden.js file) */if(window.ccGarden)window.ccGarden().then(()=>window.ccPlanInc&&window.ccPlanInc(s.id)).catch(()=>{});
@@ -1376,9 +1376,13 @@ function termMark(){const d=termDone();$$('.mts-tm[data-tm]',root).forEach(b=>{c
 let curTm=-1;
 function termLesson(i,scroll){const d=$('#mtstmd',root);if(!d)return;
  if(i<0||i===curTm||!T.lessons[i]){curTm=-1;d.innerHTML='';$('#mts-term').classList.remove('tmsel');$$('.mts-tm[data-tm]',root).forEach(b=>{b.classList.remove('on');b.setAttribute('aria-expanded','false')});return}
- curTm=i;const l=T.lessons[i],st=onState(),ok=met(l.need,st),done=termDone().includes(l.n),sj=k=>S.subjects[k]||{t:'',h:''},v=l.see&&src(l.see.k);
+ curTm=i;
  $('#mts-term').classList.add('tmsel');$$('.mts-tm[data-tm]',root).forEach(b=>{const on=+b.dataset.tm===i;b.classList.toggle('on',on);b.setAttribute('aria-expanded',on?'true':'false')});
- d.innerHTML=`<article class="mts-tmp glass"><header class="mts-regh"><span class="mts-regi" aria-hidden="true">${ic(l.ic)}</span><div><div class="k">The First Term &middot; lesson ${l.n} of ${T.lessons.length} &middot; ${esc(l.app)}</div><h4>${esc(l.t)}: <span class="mts-tmsub2">${esc(l.sub)}</span></h4>${needTag(l.need)}</div><button type="button" class="mts-regx" data-tmclose="1">Close <span aria-hidden="true">&times;</span></button></header>
+ d.innerHTML=termArticle(i);const l=T.lessons[i];
+ d.classList.remove('mts-in');void d.offsetWidth;d.classList.add('mts-in');if(scroll){const r=d.getBoundingClientRect();if(r.top>innerHeight*.7)jump(d)}
+ if(window.ccGarden)window.ccGarden().then(()=>window.ccBookLessonHook&&window.ccBookLessonHook('f'+l.n,d.querySelector('.mts-tmp'))).catch(()=>{})}
+function termArticle(i){const l=T.lessons[i];if(!l)return '';const st=onState(),ok=met(l.need,st),done=termDone().includes(l.n),sj=k=>S.subjects[k]||{t:'',h:''},v=l.see&&src(l.see.k);
+ return `<article class="mts-tmp glass"><header class="mts-regh"><span class="mts-regi" aria-hidden="true">${ic(l.ic)}</span><div><div class="k">The First Term &middot; lesson ${l.n} of ${T.lessons.length} &middot; ${esc(l.app)}</div><h4>${esc(l.t)}: <span class="mts-tmsub2">${esc(l.sub)}</span></h4>${needTag(l.need)}</div><button type="button" class="mts-regx" data-tmclose="1">Close <span aria-hidden="true">&times;</span></button></header>
  <div class="mts-tmcols"><div class="mts-tmc1"><p class="mts-dday">${esc(l.why)} ${chips(l.src)}</p>
  ${ok?'':`<div class="mts-nolic"><span class="mts-alti" aria-hidden="true">${ic('chat')}</span><p><b>Not switched on for you yet.</b> ${esc(l.chat)} ${chip(l.chatsrc)}</p></div>`}
  ${v?`<a class="mts-seeit" href="${esc(v.u)}" target="_blank" rel="noopener"><span class="mts-seei" aria-hidden="true">${ic('watch')}</span><span><b>See it</b><span>${esc(l.see.n)}</span></span>${ARW}</a>`:''}
@@ -1388,16 +1392,14 @@ function termLesson(i,scroll){const d=$('#mtstmd',root);if(!d)return;
  <div class="mts-tmc2"><div class="dlabel">Three prompts to try</div>${l.prompts.map(t=>`<div class="mts-pr"><div class="mts-prh"><span class="mts-sj s-${t.s}" title="${esc(sj(t.s).h)}">${esc(sj(t.s).t)}</span><span class="mts-app">${esc(t.app)}</span><button type="button" class="mts-copy" aria-label="Copy this prompt">Copy</button></div><p class="mts-ptx mts-nod">${esc(t.p)}</p></div>`).join('')}
  <details class="mts-run glass"><summary><span class="mts-runi" aria-hidden="true">${ic('bell')}</span><span><b>Champions: run it as a 30 minute session</b><span>A ready-made running order</span></span></summary><ol>${l.run.map(([a,b])=>`<li><b>${esc(a)}</b><span>${esc(b)}</span></li>`).join('')}</ol></details>
  <button type="button" class="mts-tmdone${done?' done':''}" data-tmn="${l.n}" aria-pressed="${done?'true':'false'}"><span class="mts-tbox" aria-hidden="true"></span><span>${done?`Lesson ${l.n} is ticked off`:`Mark lesson ${l.n} as done`}</span></button>
- <p class="mts-dnote">Prompts are starting points written for this page. Swap the words in square brackets for your own, and check what comes back.</p></div></div></article>`;
- d.classList.remove('mts-in');void d.offsetWidth;d.classList.add('mts-in');if(scroll){const r=d.getBoundingClientRect();if(r.top>innerHeight*.7)jump(d)}
- if(window.ccGarden)window.ccGarden().then(()=>window.ccBookLessonHook&&window.ccBookLessonHook('f'+l.n,d.querySelector('.mts-tmp'))).catch(()=>{})}
+ <p class="mts-dnote">Prompts are starting points written for this page. Swap the words in square brackets for your own, and check what comes back.</p></div></div></article>`}
 $('.mts-tml',root).addEventListener('click',e=>{const b=e.target.closest('.mts-tm');if(b)termLesson(+b.dataset.tm,true)});
 root.addEventListener('click',e=>{if(e.target.closest('[data-tmclose]'))termLesson(-1)});
 document.addEventListener('click',e=>{const b=e.target.closest('.mts-tmdone');if(!b||!b.dataset.tmn)return;const n=+b.dataset.tmn,a=termDone(),k=a.indexOf(n);if(k<0)a.push(n);else a.splice(k,1);store.set(TMK,JSON.stringify(a));
  const on=k<0;b.classList.toggle('done',on);b.setAttribute('aria-pressed',on?'true':'false');b.lastElementChild.textContent=on?`Lesson ${n} is ticked off`:`Mark lesson ${n} as done`;termMark()});
 document.addEventListener('click',e=>{if(e.target.closest('[data-calclasses]')&&window.ccAddClasses){e.preventDefault();window.ccAddClasses()}});
 document.addEventListener('click',e=>{const b=e.target.closest('[data-plan]');if(!b)return;e.preventDefault();if(window.ccPrintPlan)window.ccPrintPlan()});
-window.ccSchool={onState,met,termDone,openTerm:i=>{setSub('mts-term',true);termLesson(-1);termLesson(i,true)},setSub:(id,sc)=>setSub(id,sc),sub:()=>curSub,applyOn:()=>applyOn(),ticks:()=>ticks,stage:()=>S.stages.find(x=>x.id===(store.get('cc-mts-stage')||S.stages[0].id))||S.stages[0]};
+window.ccSchool={onState,met,termDone,openTerm:i=>{const l=T.lessons[i];if(l&&window.ccGarden){window.ccGarden().then(()=>{if(window.ccBookGo)window.ccBookGo('f'+l.n)}).catch(()=>{});return}setSub('mts-term',true);termLesson(-1);termLesson(i,true)},termHTML:i=>termArticle(i),setSub:(id,sc)=>setSub(id,sc),sub:()=>curSub,applyOn:()=>applyOn(),ticks:()=>ticks,stage:()=>S.stages.find(x=>x.id===(store.get('cc-mts-stage')||S.stages[0].id))||S.stages[0]};
 
 setStage(store.get('cc-mts-stage')||S.stages[0].id);termMark();
 
@@ -5063,5 +5065,5 @@ else R.classList.remove('ccpre');})();
 <script type="application/json" id="cc-book">{"hw0": "assets/book-hw-1-falling.d6c01d6f7f.webp", "hw1": "assets/book-hw-2-key.1c509a2244.webp", "hw2": "assets/book-hw-3-bottle.b27dfa4980.webp", "hw3": "assets/book-hw-4-guards.7159768a35.webp", "hw4": "assets/book-hw-5-garden.961ce3202d.webp", "cover": "assets/book-cover.5520e4feb4.webp"}</script><script>window.ccData?ccData('book'):ccP(.72)</script>
 
 <script type="application/json" id="cc-ixa">{"crouch": "assets/ixa-wr-crouch.8063809882.webp", "leap": "assets/ixa-wr-leap.3669c82c27.webp", "land": "assets/ixa-wr-land.ea4b3cd8c9.webp", "beckon": "assets/ixa-wr-beckon.a5376f8235.webp", "gum": "assets/ixa-gum.93f4130c96.webp", "garden": "assets/ixa-garden.7b3c7420d8.webp", "garden_m": "assets/ixa-garden-m.11acc006eb.webp", "fall": {}, "packs": {"a2": "assets/ixa-a2.b2414a81d5.js", "a3": "assets/ixa-a3.d4ad341686.js", "lg": "assets/ixa-lg.918fcc2d24.js", "ssg": "assets/season-gardens.de205a69de.js"}, "garden_l": "assets/ixa-garden-l.f2d6f23e7d.webp"}</script><script>window.ccData?ccData('ixa'):ccP(1)</script>
-<script src="assets/rd.5dd0182d32.js"></script>
+<script src="assets/rd.694b538fc1.js"></script>
 </body></html>
